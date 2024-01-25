@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="../../assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../assets/css/adminlte.min.css">
+  <script src="https://cdn.tiny.cloud/1/d2nq8cur7uv9c3ovyevwee5l5e5k2ym6hodsnpuuy1hyy1yf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <!-- Site wrapper -->
@@ -156,7 +158,7 @@
                                                     <option value="">Toutes</option>
                                                     <option value="C1">Maquetter une application mobile</option>
                                                     <option value="C2">Manipuler une base de données - perfectionnement</option>
-                                                    <option value="C3">Développer la partie back-end d’une application web ou web mobile - perfectionnement</option>
+                                                    <option value="C3" selected>Développer la partie back-end d’une application web ou web mobile - perfectionnement</option>
                                                     <option value="C4">Collaborer à la gestion d’un projet informatique et à l’organisation de l’environnement de développement - perfectionnement</option>
                                                     <option value="C5">Développer une application mobile native, avec Android et React Native</option>
                                                     <option value="C6">Préparer et exécuter les plans de tests d’une application</option>
@@ -169,7 +171,7 @@
                                                     <option value="">Tous</option>
                                                     <option value="Lab-Markdown">Lab-Markdown</option>
                                                     <option value="Lab-Github">Lab-Github</option>
-                                                    <option value="lab-présentation">lab-présentation</option>
+                                                    <option value="lab-présentation" selected>lab-présentation</option>
                                                     <option value="Lab-debug-laravel">Lab-debug-laravel</option>
                                                     <option value="Lab-crud-basic">Lab-crud-basic</option>
                                                     <option value="Lab-crud-standard">Lab-crud-standard</option>
@@ -187,7 +189,7 @@
                                                 <select class="form-control" id="learner">
                                                     <option value="sarsri imrane">Sarsri Imrane</option>
                                                     <option value="Grain Reda">Grain Reda</option>
-                                                    <option value="Bouik Hussein">Bouik Hussein</option>
+                                                    <option value="Bouik Hussein" selected>Bouik Hussein</option>
                                                     <option value="Assaid Amina">Assaid Amina</option>
                                                     <option value="zaani hamza">Zaani Hamza</option>
                                                     <option value="FAIZ SAFAA">Faiz Safaa</option>
@@ -206,17 +208,21 @@
                                                 <select class="form-control" id="niveau">
                                                     <option value="Imiter">Imiter</option>
                                                     <option value="Adapter">Adapter </option>
-                                                    <option value="Transposer">Transposer</option>
+                                                    <option value="Transposer" selected>Transposer</option>
+                                                </select>
                                             </div> 
                                             <div class="form-group">
-                                                <label for="remarque">Remarque :</label>
-                                                <textarea name="remarque" type="text" class="form-control" id="remarque" placeholder="Remarque"></textarea>
+                                                    <label for="Remarque">Remarque :</label>
+                                                    <textarea id="Remarque" name="Remarque" >Besoin d'amélioration</textarea>
+                                             </div>
+                                             <a href="./index.php" class="btn btn-default">Cancel</a>
+                                             <a href="../index.html" type="submit" class="btn btn-primary">Submit</a>
                                             </div>
+
                                         </div>
 
                                         <div class="card-footer">
-                                            <a href="./index.php" class="btn btn-default">Cancel</a>
-                                            <button type="submit" class="btn btn-primary">Submit</button>
+
                                         </div>
                                     </form>
                                 </div>
@@ -244,15 +250,14 @@
             <!-- /.control-sidebar -->
         </div>
         <!-- ./wrapper -->
-        <script src="https://cdn.tiny.cloud/1/d2nq8cur7uv9c3ovyevwee5l5e5k2ym6hodsnpuuy1hyy1yf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-        <script>
-            tinymce.init({
-                selector: 'textarea#description',
-                plugins: 'link image code',
-                toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | outdent indent | link image | code',
-                menubar: false,
-            });
-        </script>
+       <!-- Place the following <script> and <textarea> tags your HTML's <body> -->
+    <script>
+        tinymce.init({
+          selector: 'textarea',
+          plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+          toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+        });
+      </script>
         <!-- jQuery -->
         <script src="../../assets/plugins/jquery/jquery.min.js"></script>
         <!-- Bootstrap 4 -->
