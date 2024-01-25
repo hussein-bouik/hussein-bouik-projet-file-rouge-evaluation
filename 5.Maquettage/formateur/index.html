@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../assets/plugins/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="../assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Theme style -->
@@ -87,39 +90,39 @@
                         <!-- Sidebar Menu -->
                         <nav class="mt-2">
                             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                                <!-- Ajoutez des icônes aux liens en utilisant la classe .nav-icon avec Font Awesome ou toute autre bibliothèque d'icônes -->
+                                <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link active">
+                                    <a href="../index.html" class="nav-link active">
                                         <i class="fas fa-chart-line nav-icon"></i>
-                                        <p>Évaluations</p>
+                                        <p>Evaluations</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="../gestion_apprenant/index.html" class="nav-link">
                                         <i class="fas fa-users nav-icon"></i>
                                         <p>Apprenants</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="../gestion_projet/index.html" class="nav-link ">
                                         <i class="fas fa-folder-open nav-icon"></i>
-                                        <p>Projets</p>
+                                        <p>Projects</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="../gestion_competence/index.html" class="nav-link ">
                                         <i class="fas fa-cogs nav-icon"></i>
                                         <p>Compétences</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="../gestion_niveau/index.html" class="nav-link">
                                         <i class="fas fa-list-ul nav-icon"></i>
-                                        <p>Nniveaux</p>
+                                        <p>Niveaux</p>
                                     </a>
                                 </li>
-                     <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                               <li class="nav-item">
+                                    <a href="auth/login-formateur.html" class="nav-link">
                                         <i class="fas fa-sign-out-alt nav-icon"></i>
                                         <p>Déconnexion</p>
                                     </a>
@@ -141,6 +144,11 @@
                         <div class="row mb-2">
                             <div class="col-sm-6">
                                 <h1>Les Evaluations</h1>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="gestion_evaluation/ajouter-evaluation.html" type="button" class="btn btn-primary float-right">
+                                    <i class="fas fa-plus"></i> Ajouter une évaluation
+                                </a>
                             </div>
                                                     </div>
                                                 </div><!-- /.container-fluid -->
@@ -281,8 +289,25 @@
                                                                 </div>
                                                                 <!-- /.card-body -->
                                                                 <div class="card-footer">
-                                                                    Pied de page
-                                                                </div>
+                                                                    <div class="d-flex justify-content-between align-items-center p-2">
+                                                                        <div class="d-flex align-items-center mb-2">
+                                                                            <button type="button" class="btn btn-default btn-sm">
+                                                                                <i class="fas fa-download"></i> IMPORT
+                                                                            </button>
+                                                                            <button type="button" class="btn btn-default btn-sm mt-0 mx-2">
+                                                                                <i class="fas fa-upload"></i> EXPORT
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="mr-5">
+                                                                            <ul class="pagination  m-0 float-right">
+                                                                                <li class="page-item"><a class="page-link" href="#">«</a></li>
+                                                                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="#">»</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>                                                                </div>
                                                                 <!-- /.card-footer-->
                                                             </div>
                                                             <!-- /.card -->
