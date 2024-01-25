@@ -89,7 +89,7 @@
                             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                                 <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
                                 <li class="nav-item">
-                                    <a href="../index.html" class="nav-link active">
+                                    <a href="../index.html" class="nav-link ">
                                         <i class="fas fa-chart-line nav-icon"></i>
                                         <p>Evaluations</p>
                                     </a>
@@ -101,7 +101,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../gestion_projet/index.html" class="nav-link ">
+                                    <a href="../gestion_projet/index.html" class="nav-link active">
                                         <i class="fas fa-folder-open nav-icon"></i>
                                         <p>Projects</p>
                                     </a>
@@ -146,30 +146,29 @@
     
                                 <div class="card card-primary">
                                     <div class="card-header">
-                                        <h3 class="card-title">Edit Projet</h3>
+                                        <h3 class="card-title">Modifier Projet</h3>
                                     </div>
                                     <form>
                                         <div class="card-body">
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">Titre </label>
                                                 <input name="titre" type="text" class="form-control"
-                                                    id="exampleInputEmail1" placeholder="Entre le titre">
+                                                    id="exampleInputEmail1" placeholder="Entre le titre" value="lab-laravel-test">
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInputPassword1">date debut</label>
                                                 <input name="startDate" type="date" class="form-control"
-                                                    id="exampleInputPassword1" placeholder="Password">
+                                                    id="exampleInputPassword1" placeholder="Password" value="2024-03-01" >
                                             </div>
-    
                                             <div class="form-group">
                                                 <label for="exampleInputPassword1">date fin</label>
                                                 <input name="endtDate" type="date" class="form-control"
-                                                    id="exampleInputPassword1" placeholder="Password">
+                                                    id="exampleInputPassword1" placeholder="Password" value="2024-03-31">
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInputPassword1">Description</label>
                                                 <textarea name="description" type="text" class="form-control"
-                                                    id="description" placeholder="description"></textarea>
+                                                    id="description" placeholder="description"> Projet de test pour les applications Laravel.</textarea>
                                             </div>
     
     
@@ -178,8 +177,8 @@
                                         </div>
     
                                         <div class="card-footer">
-                                            <a href="./index.php" class="btn btn-default">Cancel</a>
-                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                            <a href="index.html" class="btn btn-default">Cancel</a>
+                                            <a href="index.html" type="submit" class="btn btn-primary">Modifier</a>
                                         </div>
                                     </form>
                                 </div>
