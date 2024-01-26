@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Fixed Sidebar</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../assets/plugins/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../assets/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../assets/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="../assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../assets/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<!-- Site wrapper -->
+<div class="wrapper">
+  <!-- Navbar -->
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+                <!-- Left navbar links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                    </li>
+                </ul>
+
+                <!-- Right navbar links -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Navbar Search -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <div class="navbar-search-block">
+                            <form class="form-inline">
+                                <div class="input-group input-group-sm">
+                                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-navbar" type="submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                        <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                            <i class="fas fa-th-large"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.navbar -->
+
+            <!-- Main Sidebar Container -->
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                <!-- Brand Logo -->
+                <a href="../assets/index3.html" class="brand-link">
+                    <i class="fas fa-chart-line brand-icon"></i>
+                    <span class="brand-text font-weight-light">Gestion d'evaluation</span>
+                </a>
+
+
+                    <!-- Sidebar Menu -->
+                    <!-- Sidebar -->
+                    <div class="sidebar">
+                        <!-- Sidebar user (optional) -->
+                        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                            <div class="icon">
+                                <i class="fas fa-user-circle fa-2x fa-fw text-white"></i>
+                            </div>
+                            <div class="info">
+                                <a href="#" class="d-block">Apprenant</a>
+                            </div>
+                        </div>
+                        <!-- Sidebar Menu -->
+                        <nav class="mt-2">
+                            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                                <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active">
+                                        <i class="fas fa-chart-line nav-icon"></i>
+                                        <p>Evaluations</p>
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="competences.html" class="nav-link ">
+                                        <i class="fas fa-cogs nav-icon"></i>
+                                        <p>Compétences</p>
+                                    </a>
+                                </li>
+                               <li class="nav-item">
+                                    <a href="auth/login-apprenant.html" class="nav-link">
+                                        <i class="fas fa-sign-out-alt nav-icon"></i>
+                                        <p>Déconnexion</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- /.sidebar -->
+                    <!-- /.sidebar-menu -->
+                </div>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1>Les Evaluations</h1>
+                            </div>
+                          
+                        </div>
+                    </div><!-- /.container-fluid -->
+                </section>
+
+        
+                                            <!-- Contenu principal -->
+                                            <section class="content">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <!-- Boîte par défaut -->
+                                                          <!-- jQuery Knob -->
+            <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">
+                    <i class="far fa-chart-bar"></i>
+                    Mes compétences
+                  </h3>
+  
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                    <a href="competences.html" type="button" class="btn btn-tool" data-toggle="tooltip" title="Info">
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body"> 
+                    <div class="row">
+                        <div class="col-6 col-md-3 text-center">
+                            <h4>Maquette</h4>
+                            <!-- <p>Maquetter une application mobile</p> -->
+                            <input type="text" class="knob" value="30" data-width="90" data-height="90" data-fgColor="#3c8dbc">
+                            <!-- <div class="knob-label">New Visitors</div> -->
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-6 col-md-3 text-center">
+                            <h4>Base Données</h4>
+                            <!-- <p>Manipuler une base de données - perfectionnement</p> -->
+                            <input type="text" class="knob" value="70" data-width="90" data-height="90" data-fgColor="#f56954">
+                            <!-- <div class="knob-label">Bounce Rate</div> -->
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-6 col-md-3 text-center">
+                            <h4>Back-end</h4>
+                            <!-- <p>Développer la partie back-end d'une application web ou web mobile - perfectionnement</p> -->
+                            <input type="text" class="knob" value="80" data-min="-150" data-max="150" data-width="90"
+                                     data-height="90" data-fgColor="#00a65a">
+                            <!-- <div class="knob-label">Server Load</div> -->
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-6 col-md-3 text-center">
+                            <h4>Collaboration</h4>
+                            <!-- <p>Collaborer à la gestion d'un projet informatique et à l'organisation de l'environnement de développement - perfectionnement</p> -->
+                            <input type="text" class="knob" value="40" data-width="90" data-height="90" data-fgColor="#00c0ef">
+                            <!-- <div class="knob-label">Disk Space</div> -->
+                        </div>
+                        <!-- ./col -->
+                    </div>
+                    <!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-6 col-md-3 text-center">
+                            <h4>Mobile native</h4>
+                            <!-- <p>Développer une application mobile native, avec Android et React Native</p> -->
+                            <input type="text" class="knob" value="90" data-width="90" data-height="90" data-fgColor="#932ab6">
+                            <!-- <div class="knob-label">Bandwidth</div> -->
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-6 col-md-3 text-center">
+                            <h4>Tests</h4>
+                            <!-- <p>Préparer et exécuter les plans de tests d'une application</p> -->
+                            <input type="text" class="knob" value="50" data-width="90" data-height="90" data-fgColor="#39CCCC">
+                            <!-- <div class="knob-label">CPU</div> -->
+                        </div>
+                        <div class="col-6 col-md-3 text-center">
+                            <h4>Déploiement</h4>
+                            <!-- <p>Préparer et exécuter le déploiement d'une application web et mobile - perfectionnement</p> -->
+                            <input type="text" class="knob" value="50" data-width="90" data-height="90" data-fgColor="#39CCCC">
+                            <!-- <div class="knob-label">CPU</div> -->
+                        </div>
+                        <!-- ./col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+                                 <!-- Additional Card -->
+                                 <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">
+                                            <i class="far fa-chart-bar"></i>
+                                            Niveaux
+                                        </h3>
+
+                                        <div class="card-tools">
+                                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- /.card-header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <!-- Display levels as cards -->
+                                            <div class="col-md-4">
+                                              <div class="card">
+                                                <div class="card-header">
+                                                  <h3 class="card-title">Imiter</h3>
+                                            
+                                                </div>
+                                                <div class="card-body">
+                                                  Au niveau d'imitation, l'apprenant imite simplement le code d'un autre programmeur.
+                                                </div>
+                                              </div>
+                                            </div>
+                                  
+                                            <div class="col-md-4">
+                                              <div class="card">
+                                                <div class="card-header">
+                                                  <h3 class="card-title">Adapter</h3>
+                                            
+                                                </div>
+                                                <div class="card-body">
+                                                  Au niveau d'adaptation, l'apprenant adapte le code d'un autre programmeur à ses propres besoins.
+                                                </div>
+                                              </div>
+                                            </div>
+                                  
+                                            <div class="col-md-4">
+                                              <div class="card">
+                                                <div class="card-header">
+                                                  <h3 class="card-title">Transposer</h3>
+                                            
+                                                </div>
+                                                <div class="card-body">
+                                                  Au niveau de transposition, l'apprenant crée son propre code, mais il s'inspire du code d'un autre programmeur.
+                                                </div>
+                                              </div>
+                                            </div>
+                                        <!-- /.row -->
+                                    </div>
+                                    <!-- /.card-body -->
+                                </div>                                 <!-- /.card -->
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-header">
+                                                                <h3 class="card-title">
+                                                                    <i class="far fa-chart-bar"></i>
+                                                                    Evaluations
+                                                                </h3>
+                        
+                                                                <div class="card-tools">
+                                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                                        <i class="fas fa-minus"></i>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                                                        <i class="fas fa-times"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <!-- /.card-header -->
+                                                            <div class="card-body">
+                                                                <div class="row mb-3">
+                                                                    <div class="col-md-3">
+                                                                        <label for="skill">Compétence :</label>
+                                                                        <select class="form-control" id="skill">
+                                                                            <option value="">Toutes</option>
+                                                                            <option value="C1">Maquetter une application mobile</option>
+                                                                            <option value="C2">Manipuler une base de données - perfectionnement</option>
+                                                                            <option value="C3">Développer la partie back-end d’une application web ou web mobile - perfectionnement</option>
+                                                                            <option value="C4">Collaborer à la gestion d’un projet informatique et à l’organisation de l’environnement de développement - perfectionnement</option>
+                                                                            <option value="C5">Développer une application mobile native, avec Android et React Native</option>
+                                                                            <option value="C6">Préparer et exécuter les plans de tests d’une application</option>
+                                                                            <option value="C7">Préparer et exécuter le déploiement d’une application web et mobile - perfectionnement</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label for="project">Projet :</label>
+                                                                        <select class="form-control" id="project">
+                                                                            <option value="">Tous</option>
+                                                                            <option value="Lab-Markdown">Lab-Markdown</option>
+                                                                            <option value="Lab-Github">Lab-Github</option>
+                                                                            <option value="lab-présentation">lab-présentation</option>
+                                                                            <option value="Lab-debug-laravel">Lab-debug-laravel</option>
+                                                                            <option value="Lab-crud-basic">Lab-crud-basic</option>
+                                                                            <option value="Lab-crud-standard">Lab-crud-standard</option>
+                                                                            <option value="Lab-authentification basic">Lab-authentification basic</option>
+                                                                            <option value="Lab-starter">Lab-starter</option>
+                                                                            <option value="Lab-authentification-standard">Lab-authentification-standard</option>
+                                                                            <option value="Lab-autorisation-basic">Lab-autorisation-basic</option>
+                                                                            <option value="Lab-autorisation-standard">Lab-autorisation-standard</option>
+                                                                            <option value="Lab-deploiement">Lab-deploiement</option>
+                                                                            <option value="Prototype">Prototype</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label for="learner">Niveaux :</label>
+                                                                        <select class="form-control" id="learner">
+                                                                            <option value="">Tous</option>
+                                                                            <option value="sarsri imrane">Imiter</option>
+                                                                            <option value="Grain Reda">Adapter</option>
+                                                                            <option value="Bouik Hussein">Transposer</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-3 mt-4">
+                                                                        <button class="btn btn-primary">Filtrer</button>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="table table-bordered">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Compétence</th>
+                                                                            <th>Projet</th>
+                                                                            <th>Niveau</th>
+                                                                            <th>Remarque</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>C1. Maquetter une application mobile</td>
+                                                                            <td>Lab-Markdown</td>
+                                                                            <td>Imiter</td>
+                                                                            <td>Progrès satisfaisants</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>C2. Manipuler une base de données - perfectionnement</td>
+                                                                            <td>Lab-Github</td>
+                                                                            <td>Adapter</td>
+                                                                            <td>Travail excellent</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>C3. Développer la partie back-end d’une application web ou web mobile - perfectionnement</td>
+                                                                            <td>lab-présentation</td>
+                                                                            <td>Transposer</td>
+                                                                            <td>Besoin d'amélioration</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                            <div class="card-footer">
+                                                                <div class="d-flex justify-content-between align-items-center p-2">
+                                                                    <div class="d-flex align-items-center mb-2">
+                                                                        <button type="button" class="btn btn-default btn-sm">
+                                                                            <i class="fas fa-download"></i> IMPORT
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-default btn-sm mt-0 mx-2">
+                                                                            <i class="fas fa-upload"></i> EXPORT
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="mr-5">
+                                                                        <ul class="pagination  m-0 float-right">
+                                                                            <li class="page-item"><a class="page-link" href="#">«</a></li>
+                                                                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                                            <li class="page-item"><a class="page-link" href="#">»</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>  
+                                                            <!-- /.card-body -->
+                                                        </div>                                 <!-- /.card -->
+                                                                                </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <!-- /.content -->
+                                        </div>
+            <!-- /.content-wrapper -->
+
+            <footer class="main-footer">
+                <div class="float-right d-none d-sm-block">
+                    <b>Version</b> 3.2.0
+                </div>
+                <strong>&copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+            </footer>
+
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark">
+                <!-- Control sidebar content goes here -->
+            </aside>
+            <!-- /.control-sidebar -->
+        </div>
+        <!-- ./wrapper -->
+      
+<script src="../assets/plugins/jquery-knob/jquery.knob.min.js"></script>
+
+        <!-- jQuery -->
+        <script src="../assets/plugins/jquery/jquery.min.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- overlayScrollbars -->
+        <script src="../assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../assets/js/adminlte.min.js"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="../assets/js/demo.js"></script>
+        <script src="../assets/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../assets/dist/js/adminlte.min.js"></script>
+<!-- jQuery Knob -->
+<script src="../assets/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- Sparkline -->
+<script src="../assets/plugins/sparklines/sparkline.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../assets/dist/js/demo.js"></script>
+<script>
+    $(function () {
+      /* jQueryKnob */
+  
+      $('.knob').knob({
+        /*change : function (value) {
+         //console.log("change : " + value);
+         },
+         release : function (value) {
+         console.log("release : " + value);
+         },
+         cancel : function () {
+         console.log("cancel : " + this.value);
+         },*/
+        draw: function () {
+  
+          // "tron" case
+          if (this.$.data('skin') == 'tron') {
+  
+            var a   = this.angle(this.cv)  // Angle
+              ,
+                sa  = this.startAngle          // Previous start angle
+              ,
+                sat = this.startAngle         // Start angle
+              ,
+                ea                            // Previous end angle
+              ,
+                eat = sat + a                 // End angle
+              ,
+                r   = true
+  
+            this.g.lineWidth = this.lineWidth
+  
+            this.o.cursor
+            && (sat = eat - 0.3)
+            && (eat = eat + 0.3)
+  
+            if (this.o.displayPrevious) {
+              ea = this.startAngle + this.angle(this.value)
+              this.o.cursor
+              && (sa = ea - 0.3)
+              && (ea = ea + 0.3)
+              this.g.beginPath()
+              this.g.strokeStyle = this.previousColor
+              this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false)
+              this.g.stroke()
+            }
+  
+            this.g.beginPath()
+            this.g.strokeStyle = r ? this.o.fgColor : this.fgColor
+            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false)
+            this.g.stroke()
+  
+            this.g.lineWidth = 2
+            this.g.beginPath()
+            this.g.strokeStyle = this.o.fgColor
+            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false)
+            this.g.stroke()
+  
+            return false
+          }
+        }
+      })
+      /* END JQUERY KNOB */
+    })
+  
+  </script>
+    </body>
+    </html>
